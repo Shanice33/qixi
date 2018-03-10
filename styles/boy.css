@@ -1,0 +1,213 @@
+/*慢走*/
+@-webkit-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+
+@-moz-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+@keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+/*带花*/
+@keyframes person-floler-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -906px -0px;
+    }
+    50% {
+        background-position: -453px -0px;
+    }
+    75% {
+        background-position: -755px -0px;
+    }
+    100% {
+        background-position: -302px -0px;
+    }
+}
+
+@-webkit-keyframes person-floler-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -906px -0px;
+    }
+    50% {
+        background-position: -453px -0px;
+    }
+    75% {
+        background-position: -755px -0px;
+    }
+    100% {
+        background-position: -302px -0px;
+    }
+}
+
+@-moz-keyframes person-floler-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -906px -0px;
+    }
+    50% {
+        background-position: -453px -0px;
+    }
+    75% {
+        background-position: -755px -0px;
+    }
+    100% {
+        background-position: -302px -0px;
+    }
+}
+/*转身*/
+@keyframes boy-rotate {
+    0% {
+        background-position: -603px -291px;
+    }
+    16.7% {
+        background-position: -150px -0px;
+    }
+    33.4% {
+        background-position: -453px -291px;
+    }
+    50.1% {
+        background-position: -0px -0px;
+    }
+    66.8% {
+        background-position: -903px -291px;
+    }
+    83.5% {
+        background-position: -753px -291px;
+    }
+    100% {
+        background-position: -603px -291px;
+    }
+}
+
+@-webkit-keyframes boy-rotate {
+    0% {
+        background-position: -603px -291px;
+    }
+    16.7% {
+        background-position: -150px -0px;
+    }
+    33.4% {
+        background-position: -453px -291px;
+    }
+    50.1% {
+        background-position: -0px -0px;
+    }
+    66.8% {
+        background-position: -903px -291px;
+    }
+    83.5% {
+        background-position: -753px -291px;
+    }
+    100% {
+        background-position: -603px -291px;
+    }
+}
+
+@-moz-keyframes boy-rotate {
+    0% {
+        background-position: -603px -291px;
+    }
+    16.7% {
+        background-position: -150px -0px;
+    }
+    33.4% {
+        background-position: -453px -291px;
+    }
+    50.1% {
+        background-position: -0px -0px;
+    }
+    66.8% {
+        background-position: -903px -291px;
+    }
+    83.5% {
+        background-position: -753px -291px;
+    }
+    100% {
+        background-position: -603px -291px;
+    }
+}
+.charector {
+    width: 151px;
+    height: 291px;
+    background: url(../img/boy.png) 0 -291px no-repeat;
+    position: absolute;
+    left: 0%;
+    top: 55%;
+}
+/*人慢走*/
+.slowWalk{
+    /*动画切换的方式是一帧一帧的改变*/
+    animation: person-slow 950ms infinite steps(1,start);
+    -webkit-animation: person-slow 950ms infinite steps(1,start);
+    -moz-animation: person-slow 950ms infinite steps(1,start);
+}
+/*人物暂停*/
+.pauseWalk {
+    animation-play-state: paused;
+}
+/*人带花*/
+/*animation-fill-mode:forwards;当动画完成后，保持最后一个属性值*/
+.slowFlowerWalk{
+    animation: person-floler-slow 950ms infinite steps(1,start);
+    -webkit-animation: person-floler-slow 950ms infinite steps(1,start);
+    -moz-animation: person-floler-slow 950ms infinite steps(1,start);
+}
+.boyOriginal{
+    background-position: -150px 0;
+}
+.boy-rotate{
+    animation: boy-rotate 850ms 1 step-start forwards;
+    -webkit-animation: boy-rotate 850ms 1 step-start forwards;
+    -moz-animation: boy-rotate 850ms 1 step-start forwards;
+}

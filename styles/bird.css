@@ -1,0 +1,57 @@
+@keyframes bird-slow {
+    0% {background-position: -182px 0}
+    50% {background-position: 0 0}
+    75% {background-position: -91px 0}
+    100% {background-position: -182px 0}
+}
+@-webkit-keyframes bird-slow {
+    0% {background-position: -182px 0}
+    50% {background-position: 0 0}
+    75% {background-position: -91px 0}
+    100% {background-position: -182px 0}
+}
+@-moz-keyframes bird-slow {
+    0% {background-position: -182px 0}
+    50% {background-position: 0 0}
+    75% {background-position: -91px 0}
+    100% {background-position: -182px 0}
+}
+@keyframes bird-fly {
+    from{
+        transform: translate(0,0)
+    }
+    to {
+        transform: translate(-500px,0)
+    }
+}
+@-webkit-keyframes bird-fly {
+    from{
+        transform: translate(0,0)
+    }
+    to {
+        transform: translate(-500px,0)
+    }
+}
+@-moz-keyframes bird-fly {
+    from{
+        transform: translate(0,0)
+    }
+    to {
+        transform: translate(-500px,0)
+    }
+}
+.bird{
+    background: url(../img/bird.png) -182px 0 no-repeat;
+    min-width: 91px;
+    min-height: 71px;
+    top: 10%;
+    position: absolute;
+    z-index: 10;
+    right: -91px;
+}
+
+.birdFly{
+    animation: bird-slow 400ms infinite step-start,bird-fly 4000ms;
+    -webkit-animation: bird-slow 400ms infinite step-start,bird-fly 4000ms;
+    -moz-animation: bird-slow 400ms infinite step-start,bird-fly 4000ms;
+}

@@ -1,0 +1,82 @@
+/* 天空云 */
+@keyframes smallCloud {
+    form {
+        left: -5%;
+    }
+    to {
+        left: 100%;
+    }
+}
+@-webkit-keyframes smallCloud {
+    form {
+        left: -5%;
+    }
+    to {
+        left: 100%;
+    }
+}
+@-moz-keyframes smallCloud {
+    form {
+        left: -5%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes largeCloud {
+    from {
+        right: -5%;
+    }
+    to {
+        right: 100%;
+    }
+}
+@-webkit-keyframes largeCloud {
+    from {
+        right: -5%;
+    }
+    to {
+        right: 100%;
+    }
+}
+@-moz-keyframes largeCloud {
+    from {
+        right: -5%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.cloud {
+    z-index: 2;
+    position: absolute;
+}
+
+.cloud1 {
+    width: 181px;
+    height: 101px;
+    left: -5%;
+    top: 15%;
+    background: url('../img/cloud1.png');
+}
+
+.cloud2 {
+    width: 301px;
+    height: 140px;
+    right: -5%;
+    background: url("../img/cloud2.png");
+}
+
+.cloud1Anim{
+        animation: smallCloud 30s infinite;
+        -webkit-animation: smallCloud 30s infinite;
+        -moz-animation: smalCloud 30s infinite;
+}
+
+.cloud2Anim{
+    animation: largeCloud 60s infinite;
+    -webkit-animation: largeCloud 60s infinite;
+    -moz-animation: largeCloud 60s infinite;
+}
