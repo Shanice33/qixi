@@ -51,7 +51,7 @@
 }
 
 .birdFly{
-    animation: bird-slow 400ms infinite step-start,bird-fly 4000ms;
-    -webkit-animation: bird-slow 400ms infinite step-start,bird-fly 4000ms;
-    -moz-animation: bird-slow 400ms infinite step-start,bird-fly 4000ms;
+    animation: bird-slow 400ms infinite step-start,bird-fly 5000ms;
+    -webkit-animation: bird-slow 400ms infinite step-start,bird-fly 5000ms;
+    -moz-animation: bird-slow 400ms infinite step-start,bird-fly 5000ms;
 }

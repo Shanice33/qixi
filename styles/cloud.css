@@ -76,7 +76,7 @@
 }
 
 .cloud2Anim{
-    animation: largeCloud 60s infinite;
-    -webkit-animation: largeCloud 60s infinite;
-    -moz-animation: largeCloud 60s infinite;
+    animation: largeCloud 50s infinite;
+    -webkit-animation: largeCloud 50s infinite;
+    -moz-animation: largeCloud 50s infinite;
 }

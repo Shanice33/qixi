@@ -14,7 +14,7 @@ function BoyWalk() {
             height: $elem.height(),
             top: $elem.position().top
         };
-    }
+    };
 // 路的Y轴坐标
     var pathY = function () {
         var data = getValue('a_background_middle');
@@ -118,7 +118,7 @@ function BoyWalk() {
         var walkPlay = startRun({
             transform: 'scale(1,1)',
             opacity: 1
-        }, runTime)
+        }, runTime);
         // 走路完毕
         walkPlay.done(function() {
             defer.resolve();
@@ -128,7 +128,7 @@ function BoyWalk() {
 
 //计算需要移动的距离
     function calculateDist(direction, propotion) {
-        return (direction === 'x' ? visualWidth : visualHeigth) * propotion;
+        return (direction === 'x' ? visualWidth : visualHeigth) * propotion ;
     }
    return {
         //计算
@@ -170,7 +170,7 @@ function BoyWalk() {
            $boy.addClass('boy-rotate');
            // 监听转身完毕
            if (callback) {
-               $boy.on(animationEnd, function() {
+               $boy.on('animationend', function() {
                    callback();
                    $(this).off();
                })

@@ -4,12 +4,13 @@
 var lamp = {
     elem: $('.b_background'),
     bright: function() {
-        this.elem.addClass('lamp-bright')
+        this.elem.addClass('lamp-bright');
     },
     dark: function() {
-        this.elem.removeClass('lamp-bright')
+        this.elem.removeClass('lamp-bright');
     }
 };
+
 function doorAction(left, right, time) {
     var $door = $(".door");
     var $doorLeft = $(".door-left");
