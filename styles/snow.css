@@ -44,14 +44,12 @@
     width: 41px;
     height: 41px;
     position: absolute;
-    /*background-size: cover;*/
     z-index: 10000;
     top: -41px;
 }
 .snowRoll{
     position: absolute;
     opacity: 0;
-    height: 80px;
     animation: mysnow 20s;
     -webkit-animation: mysnow 20s;
     -moz-animation: mysnow 20s;

@@ -32,7 +32,7 @@
     right: 40%;
 }
 .rotation{
-    animation: rotation 20s;
-    -webkit-animation: rotation 20s;
-    -moz-animation: rotation 20s;
+    animation: rotation 40s;
+    -webkit-animation: rotation 40s;
+    -moz-animation: rotation 40s;
 }

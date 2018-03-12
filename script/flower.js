@@ -1,17 +1,13 @@
-var snowflakeUrl = [
-    'img/f1.png',
-    'img/f2.png',
-    'img/f3.png',
-    'img/f4.png',
-    'img/f5.png',
-    'img/f6.png'
-];
-var container = $("#content");
-var visualWidth = container.width();
-var visualHeight = container.height();
 //飘玫瑰花
-
 function snowflake() {
+    var snowflakeUrl = [
+        'img/f1.png',
+        'img/f2.png',
+        'img/f3.png',
+        'img/f4.png',
+        'img/f5.png',
+        'img/f6.png'
+    ];
     //花容器
     var $flakeContainer = $("#snowflake");
 

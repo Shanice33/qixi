@@ -1,20 +1,7 @@
 //小孩走路
 function BoyWalk() {
     var instanceX;
-    var container = $("#content");
-    var visualWidth = container.width();
-    var visualHeigth = container.height();
 
-    var swip = Swipe(container);
-// 获取走路的路线数据
-    var getValue = function (className) {
-        var $elem = $('.' + className);
-        // 走路的路线坐标
-        return {
-            height: $elem.height(),
-            top: $elem.position().top
-        };
-    };
 // 路的Y轴坐标
     var pathY = function () {
         var data = getValue('a_background_middle');
@@ -121,6 +108,7 @@ function BoyWalk() {
         }, runTime);
         // 走路完毕
         walkPlay.done(function() {
+            pauseWalk();
             defer.resolve();
         });
         return defer;
@@ -128,7 +116,7 @@ function BoyWalk() {
 
 //计算需要移动的距离
     function calculateDist(direction, propotion) {
-        return (direction === 'x' ? visualWidth : visualHeigth) * propotion ;
+        return (direction === 'x' ? visualWidth : visualHeight) * propotion ;
     }
    return {
         //计算
@@ -149,6 +137,10 @@ function BoyWalk() {
        // 停止走路
        stopWalk: function() {
            pauseWalk();
+       },
+       // 开始走路
+       startWalk: function() {
+           restoreWalk();
        },
        // 获取男孩的宽度
        getWidth: function() {

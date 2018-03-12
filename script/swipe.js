@@ -1,4 +1,6 @@
 function Swipe(container) {
+    var count = 0;
+    var $audio = $("#audio");
     //获取第一个子节点
     var element = container.find(":first");
     //滑动对象
@@ -21,12 +23,26 @@ function Swipe(container) {
             height: height + 'px'
         });
     });
+
+// 音乐配置
+    var audioConfig = [
+        'music/sweet.mp3',
+        'http://campus.51job.com/m/erdos/music/AKM-AK-152-04_2.mp3',
+        'music/sweet.mp3'
+    ];
+    swipe.music = function () {
+        $audio.attr('src',audioConfig[count = count === audioConfig.length ? 0 : count]);
+        count ++ ;
+        return false;
+    };
     //监控完成与移动
     swipe.scrollTo = function (x,speed) {
         //执行动画移动
         element.animate({
             'left': -x+'px'
-        }, speed);
+        }, speed,function () {
+            swipe.music();
+        });
         return false;
     };
     return swipe;

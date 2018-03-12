@@ -21,7 +21,7 @@
         transform: translate(0,0)
     }
     to {
-        transform: translate(-500px,0)
+        transform: translate(-700px,0)
     }
 }
 @-webkit-keyframes bird-fly {
@@ -29,7 +29,7 @@
         transform: translate(0,0)
     }
     to {
-        transform: translate(-500px,0)
+        transform: translate(-700px,0)
     }
 }
 @-moz-keyframes bird-fly {
@@ -37,7 +37,7 @@
         transform: translate(0,0)
     }
     to {
-        transform: translate(-500px,0)
+        transform: translate(-700px,0)
     }
 }
 .bird{
@@ -51,7 +51,7 @@
 }
 
 .birdFly{
-    animation: bird-slow 400ms infinite step-start,bird-fly 5000ms;
-    -webkit-animation: bird-slow 400ms infinite step-start,bird-fly 5000ms;
-    -moz-animation: bird-slow 400ms infinite step-start,bird-fly 5000ms;
+    animation: bird-slow 400ms infinite step-start,bird-fly 8000ms;
+    -webkit-animation: bird-slow 400ms infinite step-start,bird-fly 8000ms;
+    -moz-animation: bird-slow 400ms infinite step-start,bird-fly 8000ms;
 }
